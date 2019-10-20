@@ -1,0 +1,68 @@
+body
+{
+font-family:Tahoma,Geneva,sans-serif;
+color:#fff;
+background:url(1431757.jpg);
+background-size:cover;
+}
+.resetpass
+{
+background: rgba(50,65,80,0.7);
+padding: 40px;
+width:250px;
+height:430px;
+margin:auto;
+margin-top:80px;
+margin-left:180px;
+margin: 0 auto;
+margin-top:90px;
+border-radius: 25px;
+   
+}
+form
+{
+width:240px;
+text-align:center;
+}
+input[type=text]
+{
+width=240px;
+text-align:center;
+background:transparent;
+border:none;
+border-bottom:1px solid #fff;
+font-family:"Play",sans-serif;
+font-size:16px;
+font-weight:200px;
+padding:10px 0;
+transition:border 0.5s;
+outline:none;
+color:#fff;
+}
+input[type=password]
+{
+width=240px;
+text-align:center;
+background:transparent;
+border:none;
+border-bottom:1px solid #fff;
+font-family:"Play",sans-serif;
+font-size:16px;
+font-weight:200px;
+padding:10px 0;
+transition:border 0.5s;
+outline:none;
+color:#fff;
+}
+h2
+{
+margin-top:50px;
+margin-left:10px;
+}
+a{
+color :yellow;
+}
+a:hover
+{
+color:pink;
+}

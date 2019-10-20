@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" contents="text/html"/>
+<title>login page</title>
+<link href="login.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+<div>
+<font face="garamond" color="#fff" font size="45px" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WanderinG EarL</font> 
+</div>
+<hr>
+<div class="signin">
+<form name="form1" action="cong.html" onsubmit="return validateForm()">
+<h2 style="color:white">Sign In<h2>
+<input type="email" name="email" placeholder="username or email">
+<input type="password" name="password" placeholder="password"><br><br><br>
+<a href="cong.html"><input type = "submit"  value = "Log In" ></input></a><br><br>
+</form>
+<a href="rp.html" style="margin-right:0px;font-size:13px;font-family:Tahoma,geneva,sans-self;">Reset Password?</a> &nbsp; &nbsp;
+<a href="fp.html" style="margin-right:0px;font-size:13px;font-family:Tahoma,geneva,sans-self;">Forgot Password?</a><br><br><br><br><br>
+<center><font size="2px">Don't have an acoount?<a href="signup.html">Sign up</a></font><center>
+</div><br><br>
+</body>
+<script>
+function validateForm() 
+		{	
+	var password = document.forms["form1"]["password"].value;
+			var email = document.forms["form1"]["email"].value;
+			
+			if(email == "" || password == "")
+			{
+				alert("Fields cannot be empty");
+				return false;
+			}
+			if(password.length < 6)
+			{
+				alert("Password must be more than 6 characters");
+				return false;
+			}
+			
+		}
+		
+	</script>
+
+</html>

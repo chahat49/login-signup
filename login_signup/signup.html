@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" contents="text/html"/>
+<title>signup page</title>
+<link href="signup.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+<div>
+<font face="garamond" color="#fff" font size="45px" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WanderinG EarL</font> 
+</div>
+<hr>
+<div class="signup">
+<form name="form1" action="cong.html" onsubmit="return validateForm()">
+<h2 style="color:white">Sign Up <h2>
+<input type="text" name="username" placeholder="First Name"><br><br>
+<input type="text" name="username" placeholder="Last Name"><br><br>
+<input type="password" name="password" placeholder="password"><br><br>
+<input type="password" name="password" placeholder=" Confirm password"><br><br>
+<input type="email" name="email" placeholder="Email address"><br><br>
+<input type = "submit"  value = "Sign In" ></input><br><br>
+</form>
+</div>
+</body>
+<script>
+function validateForm() 
+		{	
+	var password = document.forms["form1"]["password"].value;
+			var email = document.forms["form1"]["email"].value;
+			var username = document.forms["form1"]["username"].value;
+			if(email == "" || username == "")
+			{
+				alert("Fields cannot be empty");
+				return false;
+			}
+			if(password.value < 6)
+			{
+				alert("Password must be more than 6 characters");
+				return false;
+			}
+			
+		}
+		
+	</script>
+</html>
